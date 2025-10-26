@@ -1,5 +1,5 @@
 
-# 🧠 Coder-Buddy
+# 🧠 Coder-Buddy [Demo](https://drive.google.com/file/d/18YvibUbRkLiw3wwxNvFNOFr3bgTsI2FV/view?usp=sharing)
 
 **Coder-Buddy** is an AI-powered coding companion that helps developers generate, debug, and explain code instantly.
 Built with **FastAPI**, powered by **Groq LLMs**, and designed for developers who want to code faster, learn smarter, and work efficiently.
@@ -115,3 +115,4 @@ To contribute:
 ## 💡 Credits
 
 Developed by **Rishi Kumar Thakur**
+
