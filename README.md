@@ -1,41 +1,117 @@
-# 🛠️ Coder Buddy
 
-**Coder Buddy** is an AI-powered coding assistant built with [LangGraph](https://github.com/langchain-ai/langgraph).  
-It works like a multi-agent development team that can take a natural language request and transform it into a complete, working project — file by file — using real developer workflows.
+# 🧠 Coder-Buddy
 
----
-
-## 🏗️ Architecture
-
-- **Planner Agent** – Analyzes your request and generates a detailed project plan.
-- **Architect Agent** – Breaks down the plan into specific engineering tasks with explicit context for each file.
-- **Coder Agent** – Implements each task, writes directly into files, and uses available tools like a real developer.
-
-<div style="text-align: center;">
-    <img src="resources/coder_buddy_diagram.png" alt="Coder Agent Architecture" width="90%"/>
-</div>
+**Coder-Buddy** is an AI-powered coding companion that helps developers generate, debug, and explain code instantly.
+Built with **FastAPI**, powered by **Groq LLMs**, and designed for developers who want to code faster, learn smarter, and work efficiently.
 
 ---
 
-## 🚀 Getting Started
-### Prerequisites
-- Make sure you have uv installed, follow the instructions [here](https://docs.astral.sh/uv/getting-started/installation/) to install it.
-- Ensure that you have created a groq account and have your API key ready. Create an API key [here](https://console.groq.com/keys).
+## 🚀 Features
 
-### ⚙️ **Instsllstion and Startup**
-- Create a virtual environment using: `uv venv` and activate it using `source .venv/bin/activate`
-- Install the dependencies using: `uv pip install -r pyproject.toml`
-- Create a `.env` file and add the variables and their respective values mentioned in the `.sample_env` file
-
-Now that we are done with all the set-up & installation steps we can start the application using the following command:
-  ```bash
-    python main.py
-  ```
-
-### 🧪 Example Prompts
-- Create a to-do list application using html, css, and javascript.
-- Create a simple calculator web application.
-- Create a simple blog API in FastAPI with a SQLite database.
+* 🤖 **AI Chat Interface** – Talk to an AI assistant for real-time coding help
+* ⚡ **Groq-Powered LLMs** – Experience ultra-fast responses via the Groq API
+* 🧩 **Multi-language Code Support** – Python, JavaScript, and more
+* 🖥️ **FastAPI Backend** – Lightweight, modular, and production-ready
+* 🧠 **Smart Explanations** – Understand complex code snippets easily
 
 ---
-Copyright©️ Codebasics Inc. All rights reserved.
+
+## 🛠️ Installation Guide
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/your-username/Coder-Buddy.git
+cd Coder-Buddy
+```
+
+### 2️⃣ Create a virtual environment
+
+```bash
+python3 -m venv venv
+source venv/bin/activate       # macOS/Linux
+venv\Scripts\activate          # Windows
+```
+
+### 3️⃣ Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Set up your Groq API key
+
+Create a `.env` file in your project root directory and add:
+
+```
+GROQ_API_KEY=your_api_key_here
+```
+
+👉 Get your API key from [https://console.groq.com](https://console.groq.com)
+
+---
+
+## ▶️ Run the Application
+
+Start the FastAPI server:
+
+```bash
+uvicorn app:app --reload
+```
+
+
+You’ll see **Coder-Buddy** up and running on your local system!
+
+---
+
+## 💬 Example Interaction
+
+**Prompt:**
+
+> Explain what this function does and how to optimize it.
+
+**Coder-Buddy Output:**
+
+> This function calculates the factorial recursively.
+> Optimization: use an iterative loop or memoization to reduce stack calls.
+
+---
+
+## 🧩 Project Structure
+
+```
+Coder-Buddy/
+│
+├── app.py                # Main FastAPI application
+├── requirements.txt      # Dependencies list
+├── .env                  # API keys (not committed)
+├── README.md             # Project documentation
+└── utils/                # Helper functions (optional)
+```
+
+---
+
+## 📦 Requirements
+
+* Python 3.10 or higher
+* pip (latest version)
+* Groq API key
+
+---
+
+## 🧑‍💻 Contributing
+
+We welcome contributions!
+To contribute:
+
+1. Fork this repository
+2. Create a feature branch (`git checkout -b feature-name`)
+3. Commit changes and push
+4. Create a pull request
+
+---
+
+
+## 💡 Credits
+
+Developed by **Rishi Kumar Thakur**
